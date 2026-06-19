@@ -120,18 +120,11 @@ export function ContactForm() {
             <input id="email" name="Email" type="email" required placeholder="tu@email.com" className={fieldClass} />
           </div>
           <div>
-            <label className={labelClass} htmlFor="companyEmail">
-              Email de la empresa
+            <label className={labelClass} htmlFor="telefono">
+              Teléfono <span className="text-pink">*</span>
             </label>
-            <input id="companyEmail" name="Email de la empresa" type="email" placeholder="vos@empresa.com" className={fieldClass} />
+            <input id="telefono" name="Teléfono" type="tel" required placeholder="+54 11 1234 5678" className={fieldClass} />
           </div>
-        </div>
-
-        <div>
-          <label className={labelClass} htmlFor="telefono">
-            Teléfono <span className="text-pink">*</span>
-          </label>
-          <input id="telefono" name="Teléfono" type="tel" required placeholder="+54 11 1234 5678" className={fieldClass} />
         </div>
 
         <div className="grid gap-5 sm:grid-cols-2">

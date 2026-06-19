@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Figtree, Fragment_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 const figtree = Figtree({
@@ -28,7 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={`${figtree.variable} ${fragmentMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }

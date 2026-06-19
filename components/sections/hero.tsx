@@ -33,6 +33,7 @@ const trustedLogos = [
   { src: '/trusted/skilling-white.png', alt: 'Skilling Forward' },
   { src: '/trusted/buildhunter-white.png', alt: 'BuildHunter' },
   { src: '/trusted/barberjob-white.png', alt: 'Barberjob' },
+  { src: '/trusted/neural-white.png', alt: 'NeuralHaus', className: 'h-10' },
 ]
 
 const container: Variants = {
@@ -92,7 +93,7 @@ export function Hero() {
               >
                 <motion.h1
                   variants={line}
-                  className="whitespace-nowrap text-4xl font-bold leading-[1.05] tracking-[-0.02em] text-white sm:text-5xl lg:text-6xl"
+                  className="text-balance text-3xl font-bold leading-[1.1] tracking-[-0.02em] text-white sm:whitespace-nowrap sm:text-5xl sm:leading-[1.05] lg:text-6xl"
                 >
                   {current.head}
                 </motion.h1>
@@ -112,15 +113,15 @@ export function Hero() {
             </AnimatePresence>
           </div>
 
-          <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-            <Link href="/contact">
-              <Button size="lg" variant="white">
+          <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center">
+            <Link href="/contact" className="w-full sm:w-auto">
+              <Button size="lg" variant="white" className="w-full sm:w-auto">
                 Trabajá con nosotros
                 <ArrowRight className="size-4" />
               </Button>
             </Link>
-            <a href="#casos">
-              <Button size="lg" variant="outline">
+            <a href="#casos" className="w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto">
                 Ver casos de estudio
               </Button>
             </a>
@@ -145,7 +146,7 @@ export function Hero() {
                     alt={logo.alt}
                     width={150}
                     height={32}
-                    className="h-7 w-auto shrink-0 object-contain opacity-60 transition-opacity duration-300 hover:opacity-100"
+                    className={`w-auto shrink-0 object-contain opacity-60 transition-opacity duration-300 hover:opacity-100 ${logo.className ?? 'h-7'}`}
                   />
                 ))}
               </div>
