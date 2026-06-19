@@ -17,7 +17,7 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2 text-base font-semibold">
               <span className="size-6 rounded-md bg-[linear-gradient(135deg,#0099ff,#df7afe)]" />
-              Analytics<span className="text-white/50">Group</span>
+              Nimbora
             </Link>
             <p className="mt-4 max-w-xs text-sm text-white/55">
               Automatización e inteligencia artificial a medida para que tu negocio
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 text-sm text-white/45 md:flex-row">
-          <p>© 2026 Analytics Group. Todos los derechos reservados.</p>
+          <p>© 2026 Nimbora. Todos los derechos reservados.</p>
           <p>Hecho con automatización e IA.</p>
         </div>
       </div>

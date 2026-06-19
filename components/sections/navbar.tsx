@@ -41,7 +41,7 @@ export function Navbar() {
       <div className="flex items-center justify-between px-6 py-4 md:px-12 lg:px-16">
         <Link href="/" className="flex items-center gap-2 text-base font-semibold">
           <span className="size-6 rounded-md bg-[linear-gradient(135deg,#0099ff,#df7afe)]" />
-          Analytics<span className="text-white/50">Group</span>
+          Nimbora
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">

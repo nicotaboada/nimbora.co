@@ -50,7 +50,7 @@ export function ContactForm() {
         },
         body: JSON.stringify({
           ...data,
-          _subject: 'Nueva consulta desde la web — Analytics Group',
+          _subject: 'Nueva consulta desde la web — Nimbora',
         }),
       })
       if (!res.ok) throw new Error('request failed')

@@ -16,7 +16,7 @@ const fragmentMono = Fragment_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Analytics Group — Automatización con IA para tu negocio',
+  title: 'Nimbora — Automatización con IA para tu negocio',
   description:
     'Ayudamos a empresas a trabajar de forma más inteligente con automatización e inteligencia artificial a medida.',
 }

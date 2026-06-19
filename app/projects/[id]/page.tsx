@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const project = getProject(id)
   if (!project) return { title: 'Project not found' }
   return {
-    title: `${project.title} — Analytics Group`,
+    title: `${project.title} — Nimbora`,
     description: project.context.en,
   }
 }

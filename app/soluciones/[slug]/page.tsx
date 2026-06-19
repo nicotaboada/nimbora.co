@@ -74,7 +74,7 @@ export async function generateMetadata({
   const service = getService(slug)
   if (!service) return {}
   return {
-    title: `${service.title} — Analytics Group`,
+    title: `${service.title} — Nimbora`,
     description: service.heroDescription,
   }
 }

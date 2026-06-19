@@ -7,7 +7,7 @@ import { Reveal } from '@/components/ui/reveal'
 import { ContactForm } from '@/components/contact/contact-form'
 
 export const metadata: Metadata = {
-  title: 'Contacto — Analytics Group',
+  title: 'Contacto — Nimbora',
   description:
     'Agendá tu evaluación de automatización gratuita y descubrí cómo podemos transformar las operaciones de tu negocio con IA.',
 }

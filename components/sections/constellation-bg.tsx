@@ -29,10 +29,12 @@ export function ConstellationBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
-    const canvas = canvasRef.current
-    if (!canvas) return
-    const ctx = canvas.getContext('2d')
-    if (!ctx) return
+    const el = canvasRef.current
+    if (!el) return
+    const context = el.getContext('2d')
+    if (!context) return
+    const canvas: HTMLCanvasElement = el
+    const ctx: CanvasRenderingContext2D = context
 
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 

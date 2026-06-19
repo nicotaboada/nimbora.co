@@ -51,7 +51,7 @@ export function About() {
           <Reveal delay={0.2} className="max-w-3xl mx-auto">
             <div className="space-y-6 text-white/70 leading-relaxed text-center">
               <p>
-                Soy fundador de Analytics Group y mi misión es acercar la automatización inteligente a las empresas de Latinoamérica. No me limito a implementar tecnología: transformo la forma en que operan los negocios entendiendo a fondo sus desafíos y diseñando soluciones que generan un impacto real.
+                Soy fundador de Nimbora y mi misión es acercar la automatización inteligente a las empresas de Latinoamérica. No me limito a implementar tecnología: transformo la forma en que operan los negocios entendiendo a fondo sus desafíos y diseñando soluciones que generan un impacto real.
               </p>
               <p>
                 Mi enfoque combina pensamiento estratégico con ejecución concreta. Trabajo con un grupo acotado de clientes a la vez para que cada proyecto reciba la atención y la experiencia que merece. Cada solución la construyo pensando en el valor a largo plazo, no en arreglos rápidos.
