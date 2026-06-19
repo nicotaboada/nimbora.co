@@ -1,0 +1,164 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme {
+  /* Surfaces — dark theme */
+  --color-background: #0d0d0d;
+  --color-foreground: #ffffff;
+  --color-muted: #161616;
+  --color-muted-foreground: rgba(255, 255, 255, 0.6);
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-card: rgba(255, 255, 255, 0.04);
+
+  /* Accents — blue → purple → pink gradient family */
+  --color-primary: #0099ff;
+  --color-primary-foreground: #ffffff;
+  --color-violet: #814ac8;
+  --color-pink: #df7afe;
+
+  --font-sans: var(--font-figtree), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-fragment-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: rgba(0, 153, 255, 0.35);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background-image: linear-gradient(
+      100deg,
+      #0099ff 0%,
+      #814ac8 50%,
+      #df7afe 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-glow {
+    background-image: radial-gradient(
+      60% 60% at 50% 0%,
+      rgba(129, 74, 200, 0.25) 0%,
+      rgba(0, 153, 255, 0.12) 35%,
+      transparent 70%
+    );
+  }
+
+  .border-gradient {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--color-background), var(--color-background)) padding-box,
+      linear-gradient(120deg, rgba(0, 153, 255, 0.5), rgba(223, 122, 254, 0.5))
+        border-box;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 22s linear infinite;
+  }
+
+  .animate-spin-rev {
+    animation: spin-slow 30s linear infinite reverse;
+  }
+
+  .animate-twinkle {
+    animation: twinkle 4s ease-in-out infinite;
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.12;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -28;
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-dash {
+  stroke-dasharray: 6 8;
+  animation: dash-flow 1s linear infinite;
+}
+
+@keyframes comet-flow {
+  to {
+    stroke-dashoffset: -260;
+  }
+}
+
+.animate-comet {
+  stroke-dasharray: 7 253;
+  animation: comet-flow 4s linear infinite;
+}
+
+.animate-float {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-spin-slow,
+  .animate-spin-rev,
+  .animate-twinkle,
+  .animate-marquee {
+    animation: none;
+  }
+}
