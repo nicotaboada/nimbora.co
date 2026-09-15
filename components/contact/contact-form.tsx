@@ -5,9 +5,10 @@ import { ArrowRight, Check, Loader2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 // Email de contacto (solo para mostrar en mensajes de error)
-const EMAIL = 'nicolastaboada.tech@gmail.com'
-// Token de FormSubmit — oculta el email real del código fuente
-const ENDPOINT = 'https://formsubmit.co/ajax/662a12c15effcb21d00eec9695b965a9'
+const EMAIL = 'nicolas@nimbora.co'
+// Endpoint de FormSubmit. Tras activar la cuenta, reemplazar el email por el token
+// que envía FormSubmit para no exponer la dirección en el código fuente.
+const ENDPOINT = 'https://formsubmit.co/ajax/nicolas@nimbora.co'
 
 const services = [
   'Agentes de IA',
